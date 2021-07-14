@@ -1,0 +1,319 @@
+/* -----------------------
+Fonts and Page Orientation
+-------------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+/* ---------------------------
+Fonts and Page Orientation End 
+------------------------------*/
+
+
+/* ----------------------
+        Top Banner
+------------------------- */
+.top-banner{
+    background-color: #2D25A0;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}.top-banner:hover .top-banner-image{
+    transform: rotate3d(0,1,0,180deg);
+    transition: transform 1s linear;
+}
+.top-banner-text-image{
+    display: flex;
+    justify-content: space-evenly;
+}
+.top-banner-text h1{
+    color: white;
+    font-size: 64px;
+    margin: 0;
+    margin-bottom: 27px;
+}
+.button{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+.button i{
+    width: 24px;
+    height: 24px;
+    padding-left: 8px;
+}
+.top-banner-image{
+    display: flex;
+    justify-content: center;
+}
+.top-banner-image img{
+    width: 556px;
+    height: 450px;
+}
+
+/* ----------------------
+    Top Banner End
+------------------------- */
+
+
+/* ----------------------
+Player and Their Info
+------------------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.player{
+    width: 300px;
+    padding: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+.player-image img{
+    width: 300px;
+    height: 256px;
+    margin: 0;
+}
+.player-info h3{
+    font-size: 28px;
+    margin: 0;
+    margin-top: 15px;
+}
+.player-info p{
+    margin: 0px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #6C6C6C;
+}
+/* ----------------------
+Player and Their Info End
+------------------------- */
+
+
+/* ----------------------
+        Latest News
+------------------------- */
+.latest-news-container{
+    display: flex;
+    justify-content: center;
+}
+.latest-news{
+    margin-top: 70px;
+    width: 81%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 70px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);;
+}
+.news-text{
+    width: 650px;
+}
+.news-text h1{
+    margin: 0;
+    font-size: 28px;
+}
+.news-text p{
+    color: #6C6C6C;
+    margin-bottom: 25px;
+}
+.news-thumbnail img{
+    width: 100%;
+}
+/* ----------------------
+    Latest News End
+------------------------- */
+
+
+/* ----------------------
+Final Match Highlight
+------------------------- */
+.highlight-videos{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.highlight-text{
+    text-align: center;
+    font-size: 28px;
+}
+.highlight-video{
+    padding: 10px;
+}
+iframe{
+    padding: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+}
+/* ----------------------
+Final Match Highlight End 
+------------------------- */
+
+
+/* ----------------------
+Social Network and Footer
+------------------------- */
+footer{
+    margin-top: 160px;
+}
+.footer-image{
+    display: flex;
+    justify-content: center;
+}
+.footer-image img{
+    width: 483.87px;
+    height: 120px;
+}
+.social-network-footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.social-network{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 14px;
+}
+.social i{
+    width: 17px;
+    text-align: center;
+    background-color: #969bab2d;
+    color: #969BAB;
+    padding: 8px;
+    border-radius: 100px;
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 60px;
+}
+.footer-text p{
+    margin: 0;
+}
+/*---------------------------
+Social Network and Footer End
+----------------------------- */
+
+
+/*---------------------------
+Media Query - Mobile Device
+----------------------------- */
+@media only screen and (max-width:468px) {
+
+    /* ----------------------
+        Top Banner
+    ------------------------- */
+    .top-banner{
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    .top-banner-text-image{
+        padding: 0 15px;
+        display: block;
+    }
+    .top-banner-text h1{
+        font-size: 36px;
+        width: 287px;
+        margin-bottom: 30px;
+    }
+    .top-banner-image{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        padding-top: 0;
+    }
+    .top-banner-image img{
+        width: 80%;
+        height: 80%;
+    }
+
+    /* ----------------------
+        Top Banner End
+    ------------------------- */
+
+
+    /* ----------------------
+    Player and Their Info
+    ------------------------- */
+    main{
+        padding-top: 50px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 20px;
+    }
+    /* ----------------------
+    Player and Their Info End
+    ------------------------- */
+
+
+    /* ----------------------
+        Latest News
+    ------------------------- */
+    .latest-news-container{
+        width: 100%;
+    }
+    .latest-news{
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+    }
+    .news-text{
+        width: 100%;
+    }
+    .news-text h1{
+        display: flex;
+    }
+    .button-2{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .news-thumbnail{
+        width: 100%;
+    }
+    .news-thumbnail img{
+        width: 100%;
+    }
+    /* ----------------------
+        Latest News End
+    ------------------------- */
+
+
+    /* ----------------------
+    Final Match Highlight
+    ------------------------- */
+    iframe{
+        width: 90%;
+    }
+    /* ----------------------
+    Final Match Highlight End 
+    ------------------------- */
+
+
+    /*---------------------------
+    Social Network and Footer
+    ----------------------------- */
+    .footer-image img{
+        width: 275px;
+        height: 65px;
+    }
+    /*---------------------------
+    Social Network and Footer End
+    ----------------------------- */
+
+
+}
+/*-----------------------------
+Media Query - Mobile Device End
+------------------------------- */
